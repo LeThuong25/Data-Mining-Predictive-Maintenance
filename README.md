@@ -38,11 +38,11 @@ Dự án được cấu trúc theo chuẩn module hóa (Industry Standard):
 ```text
 DATA_MINING_PROJECT/
 ├── configs/          # Chứa tham số cấu hình (params.yaml)
-├── data/             # Thư mục chứa dữ liệu (tự động bỏ qua bởi .gitignore)
+├── data/             # Thư mục chứa dữ liệu
 ├── notebooks/        # File báo cáo Jupyter Notebook (01 -> 05)
-├── outputs/          # Lưu trữ hình ảnh, bảng biểu, model xuất ra
+├── outputs/          # Lưu trữ hình ảnh, bảng biểu
 ├── scripts/          # Script chạy tự động (run_pipeline.py)
-├── src/              # Mã nguồn thực thi lõi (Tiền xử lý, Khai phá, Mô hình)
+├── src/              # Mã nguồn thực thi lõi
 ├── app.py            # Giao diện Streamlit Dashboard
 ├── requirements.txt  # Danh sách thư viện môi trường
 └── README.md

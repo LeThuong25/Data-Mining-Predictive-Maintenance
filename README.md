@@ -46,21 +46,3 @@ DATA_MINING_PROJECT/
 ├── app.py            # Giao diện Streamlit Dashboard
 ├── requirements.txt  # Danh sách thư viện môi trường
 └── README.md
-
-
-##  5. Hướng dẫn chạy lại mã nguồn (Reproducible)
-Bước 1: Cài đặt môi trường
-Mở Terminal tại thư mục gốc của dự án và chạy lệnh:
-
-pip install -r requirements.txt
-
-Bước 2: Chạy tự động toàn bộ Pipeline
-Để tái lập toàn bộ quy trình từ tải dữ liệu, tiền xử lý, huấn luyện đến đánh giá, hãy chạy script:
-
-python scripts/run_pipeline.py
-
-Bước 3: Trải nghiệm Giao diện AI Dashboard
-Hệ thống tích hợp một Dashboard giám sát thời gian thực. Khởi chạy bằng lệnh:
-
-streamlit run app.py
-

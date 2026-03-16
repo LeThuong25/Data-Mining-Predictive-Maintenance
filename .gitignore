@@ -1,0 +1,13 @@
+# Dữ liệu
+data/raw/
+data/processed/
+
+# Môi trường ảo
+.venv/
+venv/
+env/
+
+# Python Cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

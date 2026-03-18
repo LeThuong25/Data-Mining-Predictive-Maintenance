@@ -1,4 +1,4 @@
-# Data Mining Project - Đề tài 16: Phân tích lỗi sản xuất & dự đoán lỗi
+# Data Mining Project - Đề tài 16: Phân tích và Dự đoán lỗi máy móc (Predictive Maintenance)
 
 ##  Giới thiệu dự án
 Dự án này ứng dụng các kỹ thuật Khai phá dữ liệu (Data Mining) và Học máy (Machine Learning) để phân tích hành vi vận hành và dự đoán rủi ro hỏng hóc của máy móc công nghiệp. Hệ thống giúp tối ưu hóa lịch bảo trì, giảm thiểu thời gian chết (downtime) và tiết kiệm chi phí cho nhà máy.
@@ -13,7 +13,10 @@ Dự án này ứng dụng các kỹ thuật Khai phá dữ liệu (Data Mining)
 **Bước 1:** Cài đặt môi trường và thư viện:
 `pip install -r requirements.txt`
 
-**Bước 2:** Chạy các file Notebook theo thứ tự từ `01` đến `05`. Dữ liệu sẽ được tự động tải về thư mục `data/raw/` nhờ script `src/data/loader.py`.
+### A. Kết quả Mô hình Phân lớp (Phát hiện lỗi)
+Mô hình **Random Forest (Balanced Class Weight)** vượt trội hơn hẳn các Baseline do xử lý tốt tình trạng mất cân bằng dữ liệu:
+* **PR-AUC:** Đạt độ chính xác cao trong việc nhận diện đúng lớp thiểu số (Máy hỏng).
+* **F1-Score:** Cân bằng tốt giữa Precision và Recall, hạn chế tối đa rủi ro bỏ lọt lỗi (False Negative).
 
 **Bước 3:** Khởi chạy Demo App:
 `streamlit run app.py`.
